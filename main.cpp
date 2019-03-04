@@ -9,3 +9,14 @@ int main(){
 
 void BST::tstPrint()
 {cout << " Hello world " << endl;}
+
+BST::BST(){
+    root = nullptr;
+}
+
+//node pointer, defined in constructor
+BST::node* BST::CreateLeaf(int key){ node* n = new node;
+    n->key = key;
+    n->left = nullptr;
+    n->right = nullptr;
+    return n; }

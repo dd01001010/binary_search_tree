@@ -9,7 +9,21 @@ using namespace std;
 class BST{
     private:
 
+        struct node
+        {
+            /* data */
+            int key;
+            node* left;
+            node* right;
+        };
+        
+        node* root;
+
     public:
-    void tstPrint();
+    
+        void tstPrint();
+        BST();
+        node* CreateLeaf(int key);
+
 };
 #endif
