@@ -18,12 +18,15 @@ class BST{
         };
         
         node* root;
-
+        void addLeafPriv(int key, node* ptr);
+        void printInOrderPriv(node* ptr);
     public:
     
         void tstPrint();
         BST();
         node* CreateLeaf(int key);
+        void addLeaf(int key);
+        void printInOrder();
 
 };
 #endif
